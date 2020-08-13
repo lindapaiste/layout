@@ -1,0 +1,51 @@
+{
+  "name": "@lindapaiste/layout",
+  "version": "1.0.0",
+  "description": "basic building block JSX components for writing layouts with less inline CSS styling",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindapaiste/layout.git"
+  },
+  "homepage": "https://github.com/lindapaiste/layout",
+  "bugs": {
+    "url": "https://github.com/lindapaiste/layout/issues"
+  },
+  "keywords": [
+    "layout",
+    "translate",
+    "flex"
+  ],
+  "author": "Linda Paiste",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "@types/react": "^16.9.46",
+    "@types/react-native": "^0.63.8",
+    "jest": "^26.3.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-native": "^0.63.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}

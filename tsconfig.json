@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "downlevelIteration": false,
+    "declaration": true,
+    "strict": true,
+    "outDir": "./lib",
+    "jsx": "react-native",
+    "typeRoots": ["node_modules/@types"],
+    "skipLibCheck": true
+  },
+  "lib": ["es2019", "esnext"],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "__tests__"
+  ]
+}
