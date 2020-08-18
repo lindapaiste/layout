@@ -22,16 +22,19 @@ export interface ViewportSize {
 }
 
 /**
- * can handle an undefined input, but will return an undefined value
+ * convert a number in viewport units into a number of pixels
+ * no longer supporting pass-through of undefined
  */
-export type ViewportConverter = <T extends number | undefined>(units: T) => T
+export type ViewportConverter = (units: number) => number;
 
 /**
- * pair of converters for vw and vh
+ * converters for vw, vh, vmin and vmax
  */
 export interface ViewportFunctions {
   vw: ViewportConverter;
   vh: ViewportConverter;
+  vmin: ViewportConverter;
+  vmax: ViewportConverter;
 }
 
 /**
