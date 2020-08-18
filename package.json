@@ -1,6 +1,6 @@
 {
   "name": "@lindapaiste/layout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "basic building block JSX components for writing layouts with less inline CSS styling",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
