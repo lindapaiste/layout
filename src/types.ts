@@ -24,7 +24,7 @@ export interface ViewportSize {
 /**
  * can handle an undefined input, but will return an undefined value
  */
-export type ViewportConverter = (units: number | undefined) => typeof units;
+export type ViewportConverter = <T extends number | undefined>(units: T) => T
 
 /**
  * pair of converters for vw and vh
