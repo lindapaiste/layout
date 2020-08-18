@@ -32,6 +32,24 @@ export const FixedSizeView = ViewWithStyle(
 );
 
 /**
+ * provide prop size for a square ie. a fixed-size with width and height the same
+ */
+export const SquareView = ({size, ...props}: ViewWith<{size: number}>) =>
+    FixedSizeView({...props, width: size, height: size});
+
+/**
+ * provide prop size (diameter) for a circle ie. a square with 50% border radius
+ */
+export const CircleView = ViewWithStyle(
+    ({size}: { size: number }) => ({
+        width: size,
+        height: size,
+        borderRadius: .5 * size,
+        overflow: 'hidden'
+    })
+);
+
+/**
  * provide props translateX and/or translateY for a translated view
  */
 export const TranslatedView = ViewWithStyle(
