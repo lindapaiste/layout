@@ -7,7 +7,7 @@
     "declaration": true,
     "strict": true,
     "outDir": "./lib",
-    "jsx": "react-native",
+    "jsx": "react",
     "typeRoots": ["node_modules/@types"],
     "skipLibCheck": true
   },

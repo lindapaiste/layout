@@ -1,5 +1,5 @@
 {
-  "name": "@lindapaiste/layout",
+  "name": "@lindapaiste/react-native-layout",
   "version": "1.0.3",
   "description": "basic building block JSX components for writing layouts with less inline CSS styling",
   "main": "./lib/index.js",
@@ -35,6 +35,7 @@
     "@types/react": "^16.9.46",
     "@types/react-native": "^0.63.8",
     "jest": "^26.3.0",
+    "metro-react-native-babel-preset": "^0.63.0",
     "prettier": "^2.0.5",
     "ts-jest": "^26.2.0",
     "tslint": "^6.1.3",
