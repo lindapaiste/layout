@@ -1,6 +1,6 @@
 {
   "name": "@lindapaiste/react-native-layout",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "basic building block JSX components for writing layouts with less inline CSS styling",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

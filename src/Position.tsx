@@ -1,4 +1,5 @@
 import {ViewWithStyle} from "./ViewWithStyle";
+import {Size} from "./Size";
 
 export interface Translate {
     translateX: number;
@@ -40,3 +41,18 @@ export const PositionedView = ViewWithStyle(
 export const RelativeContainer = ViewWithStyle({
     position: "relative",
 });
+
+/**
+ * rectangle view combines fixed size with absolute position, for placing views with rectangle props x, y, width,
+ * height at the correct position and size
+ */
+export const RectangleView = ViewWithStyle(
+    ({x,y, width, height}: Partial<Position> & Partial<Size>) => ({
+        position: 'absolute',
+        top: y,
+        left: x,
+        width,
+        height,
+        overflow: 'hidden'
+    })
+)
